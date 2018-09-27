@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Terry's Survey Form</title>
+  </head>
+
+
+
+  <body>
+    <h1 id="title">Web Survey Form</h1>
+    <div id="outer-form">
+      <p id="description">
+      This form is to allow you to register your interest to be considered in the draw to win $1,000,000.00!!
+      </p>
+
+      <form id="survey-form">
+	<div class="rowTab">
+	  <div class="labels">
+	    <label id="name-label" for="name">* Full Name:
+	    </label>
+	  </div>
+	  <div class="rightTab">
+	    <input class="input-field" type="text" id="name" name="name" required placeholder="Enter name here">
+	  </div>
+	</div>
+	<div class="rowTab">
+	  <div class="labels">
+	    <label id="email-label" for="email">* Email:
+	    </label>
+	  </div>
+	  <div class="rightTab">
+	    <input class="input-field" type="email" id="email" name="email" required placeholder="Enter email here">
+	  </div>
+	</div>
+	<div class="rowTab">
+	  <div class="labels">
+	    <label id="number-label" for="age">* Age:
+	    </label>
+	  </div>
+	  <div class="rightTab">
+	    <input class="input-field" type="number" id="number" name="number" min="1" max="100" placeholder="Age">
+	  </div>
+	</div>
+	<div class="rowTab">
+	  <div class="labels">
+	    <label id="dropdown-label" for="dropdown">How much do you want this?
+	    </label>
+	  </div>
+	  <div class="rightTab">
+	    <select class="dropdown" id="dropdown">
+	      <option disabled value>Select an option...</option>
+	      <option value="A_little">A little</option>
+	      <option value="A_lot">A lot</option>
+	      <option value="So_much">So much</option>
+	      <option value="Other">Other</option>
+	    </select>
+	  </div>
+	</div>
+	<div class="rowTab">
+	  <div class="labels">
+	    <label for="gender">What is your gender?
+	    </label>
+	  </div>
+	  <div class="rightTab">
+	    <ul style="list-style: none;">
+	      <li class="radio">
+		<input type="radio" name="gender" id="male" value="male"> Male
+	      </li>
+	      <li class="radio">
+		<input type="radio" name="gender" id="female" value="female"> Female
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+	<div class="rowTab">
+	  <div class="labels">
+	    <label for="house">What would you use the money for?
+	    </label>
+	  </div>
+	  <div class="rightTab">
+	    <ul style="list-style: none;">
+	      <li class="radio">
+		<input type="checkbox" name="wish-list" id="house" value="house"> House
+	      </li>
+	      <li class="radio">
+		<input type="checkbox" name="wish-list" id="car" value="car"> Car
+	      </li>
+	      <li class="radio">
+		<input type="checkbox" name="wish-list" id="holiday" value="holiday"> Holiday
+	      </li>
+	      <li class="radio">
+		<input type="checkbox" name="wish-list" id="charity" value="charity"> Charity
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+	<div class="rowTab">
+	  <div class="labels">
+	    <label for="house">Any other parting thoughts before you submit your details?
+	    </label>
+	  </div>
+	  <div class="rightTab">
+	    <textarea class="input-field" style="height:100px;" placeholder="Enter your thoughts here..." name="name" rows="8" cols="20"></textarea>
+	  </div>
+	</div>
+	<div>
+	  <button type="submit" id="submit" form="survey-form">Submit</button>
+	</div>
+
+      </form>
+
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+</html>
