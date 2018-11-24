@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+  <head>
+    <meta charset='utf-8'/>
+    <!--
+      Do not require the line below any more as I have installed node/npm Live Server
+      that has live reload capability (detects changes to html, css, javascript).
+      It serves the site's index.html file to localhost:8080 or 127.0.0.1:8080
+      <meta http-equiv='refresh' content='2000'/>
+    -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maiximum-scale=1.0' />
+    <link rel='stylesheet' href='style.css'/>
+    <title>Terry's PLP</title>
+  </head>
+
+
+
+  <body>
+    <div class='page'>
+      <header id='header' class='section'>
+	<nav id='nav-bar' class='navflex'>
+	  <img id='header-img' src='http://127.0.0.1:8080/plp.png' alt='My Product Logo'/>
+	  <ul>
+	    <li><a href='#header' class='nav-link'>About</a></li>
+	    <li><a href='#nav-bar' class='nav-link'>Contact</a></li>
+	    <li><a href='#header-img' class='nav-link'>Sign Up</a></li>
+	  </ul>
+	</nav>
+      </header>
+      <div class='banner'>
+	<h1>Automation Engineering Specialists</h1>
+      </div>
+      <div class='section signup'>
+	<form id='form' action='https://www.freecodecamp.com/email-submit' method='get' class='plp-form'>
+	  <div class='form-row'>
+	    <label for='email'>Sign up to receive your *free* consultation now!!</label>
+	    <input id='email' name='email' type='email' placeholder='Enter your email address here'/>
+	    <input id='submit' type='submit' value='Submit'>
+	  </div>
+	</form>
+      </div>
+      <div class='section box1'>
+	<p>information box number 1 here</p>
+      </div>
+      <div class='section box2'>
+	<p>information box number 2 here</p>
+      </div>
+      <div class='section box3'>
+	<p>information box number 3 here</p>
+      </div>
+      <div class='section video1'>
+	<p>video frame here</p>
+      </div>
+      <footer class='section'>
+	copyright information etc in footer of page
+      </footer>
+
+    </div>
+
+
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  </body>
+
+</html>
