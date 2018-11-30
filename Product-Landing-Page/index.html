@@ -9,7 +9,7 @@
       It serves the site's index.html file to localhost:8080 or 127.0.0.1:8080
       <meta http-equiv='refresh' content='2000'/>
     -->
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maiximum-scale=1.0' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel='stylesheet' href='style.css'/>
     <title>Terry's PLP</title>
   </head>
@@ -20,18 +20,18 @@
     <div class='page'>
       <header id='header' class='section'>
 	<nav id='nav-bar' class='navflex'>
-	  <img id='header-img' src='https://terry-sydaus.github.io/FreeCodeCampStuff/Product-Landing-Page/plp.png' alt='My Product Logo'/>
+	  <img id='header-img' src='https://terry-sydaus.github.io/FreeCodeCampStuff/Product-Landing-Page/plp1-1.png' alt='Logo'/>
 	  <ul>
-	    <li><a href='#header' class='nav-link'>About</a></li>
-	    <li><a href='#nav-bar' class='nav-link'>Contact</a></li>
-	    <li><a href='#header-img' class='nav-link'>Sign Up</a></li>
+	    <li><a href='#about' class='nav-link'>About</a></li>
+	    <li><a href='#services' class='nav-link'>Services</a></li>
+	    <li><a href='#signup' class='nav-link'>Sign Up</a></li>
 	  </ul>
 	</nav>
       </header>
-      <div class='banner'>
-	<h1>Automation Engineering Specialists</h1>
+      <div id='about' class='banner'>
+	<h2>Automation Engineering Specialists</h2>
       </div>
-      <div class='section signup'>
+      <div id='signup' class='section su'>
 	<form id='form' action='https://www.freecodecamp.com/email-submit' method='get' class='plp-form'>
 	  <div class='form-row'>
 	    <label for='email'>Sign up to receive your *free* consultation now!!</label>
@@ -40,27 +40,66 @@
 	  </div>
 	</form>
       </div>
-      <div class='section box1'>
-	<p>information box number 1 here</p>
-      </div>
-      <div class='section box2'>
-	<p>information box number 2 here</p>
-      </div>
-      <div class='section box3'>
-	<p>information box number 3 here</p>
+      <div id='services' class='section serve'>
+	<div class='section box'>
+	  <div class='box-head'>
+	    <h3>Industrial Automation</h3>
+	  </div>
+	  <div class='box-head1'>
+	    <h4>$1500 per day</h4>
+	    <ol>
+	      <li>Instrumentation</li>
+	      <li>Hardware</li>
+	      <li>Digital & Analog Software</li>
+	      <li>Troubleshooting</li>
+	      <li>System Design</li>
+	      <li>Application Engineering</li>
+	      <li>Advanced Process Control</li>
+	    </ol>
+	  </div>
+	</div>
+	<div class='section box'>
+	  <div class='box-head'>
+	    <h3>Business Process Automation</h3>
+	  </div>
+	  <div class='box-head1'>
+	    <h4>$1800 per day</h4>
+	    <ol>
+	      <li>Databases</li>
+	      <li>Spreadsheets</li>
+	      <li>Data Mining</li>
+	      <li>Risk Management</li>
+	    </ol>
+	  </div>
+	</div>
+	<div class='section box'>
+	  <div class='box-head'>
+	    <h3>Advanced Automation</h3>
+	  </div>
+	  <div class='box-head1'>
+	    <h4>$2000 per day</h4>
+	    <ol>
+	      <li>Machine Learning</li>
+	      <li>Artificial Intelligence</li>
+	      <li>Robotics</li>
+	      <li>Pattern Recognition</li>
+	      <li>Neural Networks</li>
+	      <li>Principal Component Analysis</li>
+	    </ol>
+	  </div>
+	</div>
       </div>
       <div class='section video1'>
-	<p>video frame here</p>
+	<iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/WSKi8HfcxEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
       </div>
-      <footer class='section'>
-	copyright information etc in footer of page
-      </footer>
+
 
     </div>
-
-
+    <footer class='section footer'>
+      <p>&copy <a href='https://github.com/terry-sydaus'>Terry Murphy</a> 2018</p>
+      <p>All rights reserved.</p>
+    </footer>
     <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
-
   </body>
 
 </html>
