@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+  <head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel='stylesheet' href='style.css'/>
+    <title>Terry's TDP</title>
+  </head>
+
+
+
+  <body>
+    <div class='wrapper'>
+      <nav id='navbar'>
+	<header>nV Controller Documentation - Variables</header>
+	<ul>
+	  <li><a href=#What_is_a_variable? class='nav-link'>What is a variable?</a></li>
+	  <li><a href=#Types_of_variables class='nav-link'>Types of variables</a></li>
+	  <li><a href=#Initialisation_of_variables class='nav-link'>Initialisation of variables</a></li>
+	  <li><a href=#Initialisation_Timing_of_variables class='nav-link'>Initialisation Timing of variables</a></li>
+	  <li><a href=#Size_of_variables class='nav-link'>Size of variables</a></li>
+	</ul>
+      </nav>
+      <main id='main-doc'>
+      <section class='main-section' id='What_is_a_variable?'>
+	<header>What is a variable?</header>
+	<p>A variable is a means to identify data items of which content can be
+	referred and changed through the actual I/O and the memory in the
+	controller from program. Variables can be used as in any programming language to solve all
+	sorts of mathematical problems. For example:</p> 
+	<pre><code>
+If,
+y = ax^2 + bx + c
+
+The axis of symmetry is given by:
+x = -b/2a
+	</code></pre>
+	<p>To be concrete, nV-Tool assigns variable name to actual I/O and
+	memory in the controller so that they can be referred and changed
+	from program. The variables include local variables and global variables
+	(controller variable, station variable and network variable). You have
+	always to aware of types of the variable and its effective range (scope)
+	to write a program.</p>
+      </section>
+      <section class='main-section' id='Types_of_variables'>
+	<header>Types of variables</header>
+	<ul>
+	  <li>Local variable</li>
+	  <p>Local variable is a variable that can be used only by the program
+	  including the variables. This variable is used as the variable
+	  characteristic to the program.</p>
+	</ul>
+	<p>In the example below, y and x could be local variables.</p>
+	<pre><code>
+y = x
+	</code></pre>
+	<ul>
+	  <li>Controller variable</li>
+	  <p>Controller variable is a variable used globally. This variable is used to
+	  exchange information and data between different programs in the
+	  controller. The effective range of the variable is only within the
+	  controller where the variable is used.
+	  The controller variable includes the original variables of the controller
+	  (special register, data register), user global variable defined by the user
+	  and I/O variable.
+	  </p>
+	</ul>
+	<p>In the example below, pi is a constant and a contoller variable.</p>
+	<pre><code>
+pi = 3.142
+	</code></pre>
+      </section>
+      <section class='main-section' id='Initialisation_of_variables'>
+	<header>Initialisation of variables</header>
+	<p>
+	Initialization of variables can be selected from the following
+	initializing methods. Select the start-up mode (initializing method)
+	appropriate for the use of the controller.
+	</p>
+	<ul>
+	  <li>Initialisation of global variable</li>
+	  <p>
+	  Specify whether the global variable is cleared to zero or not (i.e.
+	  previous value is held) at the transition of controller operation mode to
+	  RUN mode.
+	  nV-Tool setting is carried out as below:
+	  From the controller, select “Module Parameter” > “Controller
+	  Operation” > “Global Variable Initialize”.
+	  </p>
+	  <pre><code>
+E = mc^2
+	  </code></pre>
+	  <li>Initialisation of local variable</li>
+	  <p>
+	  Specify whether the local variable is cleared to zero or not (i.e. previous
+	  value is held) at the transition of controller operation mode to RUN
+	  mode.
+	  nV-Tool setting is carried out as below:
+	  From the controller, select “Module Parameter” > “Controller
+	  Operation” > “Local Variable Initialize
+	  </p>
+	</ul>
+      </section>
+      <section class='main-section' id='Initialisation_Timing_of_variables'>
+	<header>Initialisation Timing of variables</header>
+	<p>The ideal gas law is goverened by the following equation:</p>
+	<pre><code>
+PV = nRT
+	</code></pre>
+	<p>Where, P = pressure, V = volume, n = the number of moles, R = the universal gas constant,
+	and T = temperature. This equation can be used to determine:</p>
+	<ul>
+	  <li>Pressure</li>
+	  <li>Temperature</li>
+	  <li>Volume</li>
+	  <li>Number of moles</li>
+	</ul>
+      </section>
+      <section class='main-section' id='Size_of_variables'>
+	<header>Size of variables</header>
+	<p>This is the equation that all electrically minded people know (or should know). It 
+	is called Ohm's Law.</p>
+	<pre><code>
+V = IR
+	</code></pre>
+	<p>Where V = voltage, I = current and R = resistance. It can be used to find any of these 
+	variables in a given electrical circuit provided 2 or the variables are known. For example:</p>
+	<ul>
+	  <li>If you know the voltage is 12 V and the resistances is 250 ohms, the current is 12/250 = 0.048
+	    amps.</li>
+	</ul>
+      </section>
+      </main>
+    </div>
+    <!--
+      <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+      -->
+  </body>
+
+</html>

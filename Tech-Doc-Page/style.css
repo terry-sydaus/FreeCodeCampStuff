@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+header {
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav ul {
+  margin: 10px 1px;
+}
+
+nav li {
+  border-top: solid 1px grey;
+}
+
+nav ul li:last-of-type {
+  border-bottom: solid 1px grey;
+}
+
+section {
+  margin 10px;
+}
+
+section header {
+  text-align: left;
+}
+
+.main-section:first-child {
+  margin-top: 10px;
+}
+
+.main-section {
+  margin-top: 50px;
+  padding: 0rem 1rem;
+}
+
+.main-section:last-child {
+  margin-bottom: 200px;
+}
+
+#Main_Section_3 {
+  margin-top: 20px;
+}
+
+code {
+  display: block;
+  line-height: 1.5;
+}
+
+pre {
+  white-space: pre-wrap;
+  margin-left: 3rem;
+}
+
+section p,
+section ul li {
+  margin-left: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9em;
+  color: #4d4e53;
+}
+
+section ul li {
+  margin-left: 3rem;
+}
+
+section code {
+  border: solid 1px #f7f7f7;
+  border-radius: 3px;
+  margin: 1rem 0rem;
+  background: #f7f7f7;
+  padding: 0.7rem;
+}
+
+nav {
+  overflow: auto;
+}
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  padding: 0.5rem 1.8rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 981px) {
+  .wrapper {
+    display: flex;
+    height: 100vh; //needed to fix (stick) sidenavbar
+  }
+
+  nav {
+    flex: 1;
+  }
+
+  main {
+    flex: 3;
+    overflow: auto;
+    border-left: solid 3px grey;
+  }
+}
+
+#fcc_test_suite_wrapper {
+  /* background: orange; */
+}
+
