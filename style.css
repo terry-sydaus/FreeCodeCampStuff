@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+}
+
+h1,
+ul {
+  margin: 1rem;
+}
+
+ul > li {
+  margin-bottom: 1rem;
+}
+
