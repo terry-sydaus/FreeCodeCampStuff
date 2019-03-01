@@ -1,0 +1,219 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem; /* This changes the font size of all p elements */
+  color: #404040;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h1, h2 {
+  line-height: 1.3
+}
+
+#main-content p {
+  margin: 0 0 1.5rem 0;
+}
+
+/* #welcome-section h1 { */
+section h1 {
+  margin: 0 0 2.3rem 0;
+  text-align: center;
+  font-family: Nunito, sans-serif;
+  color: #111;
+}
+
+#main-content a {
+  text-decoration: none;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #eee;
+  background-color: #fff; /* white background */
+}
+
+.nav .nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* Always use "max-width" instead of "width" in situations like this. This will prevent parts of the element
+    * from being invisible (off to the side of the browser window). For example, if I use width in the situation
+    * below and the broswer window is reduced to less than 850px, then part of the elements will not be visible.
+    * If on the other hand I set the max-width, the width of the element will reduce to match the broswer width.*/
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* The following selector will modify:
+ * a) the padding of the items in the nav bar
+ * b) the font size of nav bar text links */
+.nav a {
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  color: #666;
+  text-decoration: none;
+  margin: 0 0.1rem;
+  border-radius: 4px;
+}
+
+/* This will change the size, color & weight of the font size used for my name */
+.nav .nav-container .my-name a {
+  font-weight: 600;
+  order: 1;
+  font-size: 0.9rem;
+  color: black;
+  padding: 0;
+}
+
+.nav .nav-container .links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  order: 3;
+}
+
+.nav .nav-container .icon-links {
+  display: flex;
+  order: 2;
+}
+
+.nav a:hover {
+  color: #111;
+}
+
+.my-name span:hover  {
+  color: #666;
+}
+
+/* This will change the size of the icons in the nav bar */
+.nav .nav-container .icon-links a {
+  font-size: 1.1rem;
+}
+
+#welcome-section {
+  background-color: #e0af93;
+  /* margin-top: 120px; */
+  padding-top: 120px;
+  /* padding-top: 13vh; */
+  /* min-height: 87vh; */
+  min-height: 100vh;
+}
+
+#about-section {
+  padding-top: 120px;
+  /* margin-top: -120px; */
+  background-color: #efa7d2;
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-viewport {
+  /* height: calc(100vh - 120px); */
+  /* If I used 'height' alone here, then when I reduced the height of the browswer, I noted that this
+   * could result in elements being layered on to of each other. */
+  min-height: 100vh;
+}
+
+.footer {
+  text-align: right;
+  margin-top: 10px;
+  height: 70px;
+  padding-top: 12px;
+  padding-right: 55px;
+  background: lightgrey;
+}
+
+@media only screen and (min-width: 400px) {
+}
+  
+@media only screen and (min-width: 43.8em) {
+  body {
+    font-size: 1.1rem; /* This changes the font size of all p elements. Set to 1 for smallest screen */
+  }
+  
+  h1 {
+    font-size: 2.05rem; /* size = 1.75 for smallest screen */
+  }
+
+  /* The following selector will modify:
+  * a) the font size of nav bar text links */
+  .nav a {
+    font-size: 1.2rem; /* size = 1 for smallest screen */
+  }
+
+  /* This will change the font size used for my name */
+  .nav .nav-container .my-name a {
+    font-size: 1rem; /* size = 0.9 for smallest screen */
+  }
+
+  /* This will change the size of the icons in the nav bar */
+  .nav .nav-container .icon-links a {
+    font-size: 1.25rem; /* size = 1.1 for smallest screen */
+  }
+  
+  .nav .nav-container .links {
+    justify-content: flex-start;
+    margin: 0.5rem 0;
+  }
+
+  .nav .links a:hover,
+  .nav .icon-links a:hover {
+    background-color: #d1cfcf66;
+  }
+
+  section h1 {
+    text-align: left;
+  }
+
+  #welcome-section {
+    padding-top: 114px;
+  }
+
+  #about-section {
+    padding-top: 114px;
+  }
+}
+
+@media only screen and (min-width: 53em) {
+  .nav .nav-container {
+    height: 70px;
+  }
+  .nav .nav-container .links {
+    /* width: auto required to prevent the nav links taking up the full width of the browser
+     * which is what happens by default outside of this media query. */
+    width: auto;
+    order: 2;
+  }
+
+  #welcome-section {
+    padding-top: 70px;
+  }
+
+  #about-section {
+    padding-top: 70px;
+  }
+}
+
+#fcc_test_suite_wrapper {
+  /* background: orange; */
+}
+
