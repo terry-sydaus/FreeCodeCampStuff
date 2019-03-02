@@ -105,18 +105,12 @@ section h1 {
 }
 
 #welcome-section {
-  background-color: #e0af93;
-  /* margin-top: 120px; */
-  padding-top: 120px;
-  /* padding-top: 13vh; */
-  /* min-height: 87vh; */
+  /* padding-top: 120px; */
   min-height: 100vh;
 }
 
-#about-section {
+.section {
   padding-top: 120px;
-  /* margin-top: -120px; */
-  background-color: #efa7d2;
 }
 
 .container {
@@ -127,10 +121,42 @@ section h1 {
 }
 
 .full-viewport {
-  /* height: calc(100vh - 120px); */
   /* If I used 'height' alone here, then when I reduced the height of the browswer, I noted that this
    * could result in elements being layered on to of each other. */
   min-height: 100vh;
+}
+
+.project-example-flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /* following required to center image in div */
+  text-align: center;
+}
+
+.project-example-flex-container a {
+  margin: 0.5rem 0;
+}
+
+.project-example-img-frame {
+  border: solid 1px black;
+  width: 280px;
+  height: 280px;
+}
+
+.project-example-img-frame img {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.project-example-title-frame {
+  height: 50px;
+  width: 280px; /* same as img-frame above */
+  border: solid 1px black;
+}
+
+.plp, .tdp {
+  order: 2
 }
 
 .footer {
@@ -184,12 +210,16 @@ section h1 {
     text-align: left;
   }
 
-  #welcome-section {
+ .section {
     padding-top: 114px;
   }
 
-  #about-section {
-    padding-top: 114px;
+  .project-example-flex-container a {
+    width: 40%;
+  }
+
+  .project-example-img-frame {
+    border: solid 1px black;
   }
 }
 
@@ -204,11 +234,7 @@ section h1 {
     order: 2;
   }
 
-  #welcome-section {
-    padding-top: 70px;
-  }
-
-  #about-section {
+  .section {
     padding-top: 70px;
   }
 }

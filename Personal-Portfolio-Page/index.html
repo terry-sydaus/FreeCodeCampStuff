@@ -4,12 +4,6 @@
 
   <head>
     <meta charset='utf-8'/>
-    <!--
-      Do not require the line below any more as I have installed node/npm Live Server
-      that has live reload capability (detects changes to html, css, javascript).
-      It serves the site's index.html file to localhost:8080 or 127.0.0.1:8080
-      <meta http-equiv='refresh' content='2000'/>
-    -->
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel='stylesheet' href='style.css'/>
     <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet"> 
@@ -34,7 +28,7 @@
 	  <a class ='nav-icon' href='https://github.com/terry-sydaus' target='_blank'>
 	    <i class="fab fa-github"></i>
 	  </a>
-	  <a class ='nav-icon' href='https://www.freecodecamp.org/terry-sydaus' target='_blank'>
+	  <a id='profile-link' class ='nav-icon' href='https://www.freecodecamp.org/terry-sydaus' target='_blank'>
 	    <i class="fab fa-free-code-camp"></i>
 	  </a>
 	</div>
@@ -90,35 +84,71 @@
 	  </p>
 	  <p>
 	  With this vision in mind, I realised that my skill set needed to expand to allow me to prepare for this
-	  next stage of my working life. And this is where Free Code Camp and its founder, Quincy Larson, come to
+	  next stage of my working life. And this is where Free Code Camp (FCC) and its founder, Quincy Larson, come to
 	  the fore, by providing this brilliant online environment to allow someone like me (anyone in fact), 
 	  to equip themselves with the skills and knowledge to get them more than started on their way to becoming
 	  a Full Stack Developer.
 	  </p>
 	  <p>
+	  And so this is how and why I can be in this position now, creating my own personal portfolio page
+	  as part of the FCC's Responsive Web Design module. I have worked very hard at this since starting 
+	  and am getting better at this the more I spend on it (funny that!), but acknowledge that I am still
+	  for the most part clueless at the current time. Having said that, I am very proud of what I have
+	  achieved so far and am pretty stoked that I have created this page using plain old HTML and CSS, without
+	  any frameworks (Bootstrap, jQuery etc.) - this is something that I wanted to do while learning the
+	  fundamentals of this craft (ie. not become dependent on a framework).
+	  </p>
+	  <p>
+	  I have learned so much along the way thus far in my journey. I am not rushing at all.
+	  Feel free to check out some of my responsive web design projects that I have completed below or 
+	  by clicking on the <a href='#projects'>Work</a> link in the Navigation Bar at the top of this page.
 	  </p>
 	</div>
       </section>
-      <section id='about-section' class='full-viewport section'>
-	<div class='about'>
-	  <a href='https://github.com/terry-sydaus'>All about Terry</a> 
-	</div>
-      </section>
 
-      <section id='projects' class='full-viewport'>
-	<div class='project-tile'>
-	  <a href='https://github.com/terry-sydaus'>Terry Murphy is learning</a> 
+      <section id='projects' class='full-viewport section'>
+	<h1 class='project-tile'>Some examples of my projects</h1>
+	<div class='project-example-flex-container'>
+	  <a href='https://terry-sydaus.github.io/FreeCodeCampStuff/Product-Landing-Page/index.html'
+	class='plp'>
+	    <div class='project-example-img-frame'>
+	      <img src='https://terry-sydaus.github.io/FreeCodeCampStuff/Personal-Portfolio-Page/plp.png'>
+	    </div>
+	    <div class='project-example-title-frame'>
+	      <span>Product Landing Page</span>
+	    </div>
+	  </a>
+	  <a href='https://terry-sydaus.github.io/FreeCodeCampStuff/Tech-Doc-Page/index.html'
+	class='tdp'>
+	    <div class='project-example-img-frame'>
+	      <img src='https://terry-sydaus.github.io/FreeCodeCampStuff/Personal-Portfolio-Page/tdp.png'>
+	    </div>
+	    <div class='project-example-title-frame'>
+	      <span>Technical Documentation Page</span>
+	    </div>
+	  </a>
+	  <a href='https://codepen.io/terry-sydaus/pen/LNoWXp'
+	class='ptp'>
+	    <div class='project-example-img-frame'>
+	      <img src='https://terry-sydaus.github.io/FreeCodeCampStuff/Personal-Portfolio-Page/ptp.png'>
+	    </div>
+	    <div class='project-example-title-frame'>
+	      <span>Personal Tribute Page</span>
+	    </div>
+	  </a>
 	</div>
       </section>
     </div>
     </main>
 
-    <footer class='section footer'>
-      <p>&copy <a id='profile-link' href='https://github.com/terry-sydaus' target='_blank'>Terry Murphy</a> 2018</p>
+    <footer id='contact-section' class='footer'>
+      <p>&copy <a href='https://github.com/terry-sydaus' target='_blank'>Terry Murphy</a> 2018</p>
       <p>All rights reserved.</p>
     </footer>
 
-    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <!--
+      <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+      -->
   </body>
 
 </html>
