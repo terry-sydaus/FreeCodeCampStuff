@@ -1,13 +1,13 @@
 {
-  "main.css": "/RandomQuoteMachine/static/css/main.72b65771.chunk.css",
-  "main.js": "/RandomQuoteMachine/static/js/main.761efbb2.chunk.js",
-  "main.js.map": "/RandomQuoteMachine/static/js/main.761efbb2.chunk.js.map",
-  "runtime~main.js": "/RandomQuoteMachine/static/js/runtime~main.fbe941b2.js",
-  "runtime~main.js.map": "/RandomQuoteMachine/static/js/runtime~main.fbe941b2.js.map",
-  "static/js/2.69d903a1.chunk.js": "/RandomQuoteMachine/static/js/2.69d903a1.chunk.js",
-  "static/js/2.69d903a1.chunk.js.map": "/RandomQuoteMachine/static/js/2.69d903a1.chunk.js.map",
-  "index.html": "/RandomQuoteMachine/index.html",
-  "precache-manifest.d6ec54b29cc8960b41d6fe4804b2f4cf.js": "/RandomQuoteMachine/precache-manifest.d6ec54b29cc8960b41d6fe4804b2f4cf.js",
-  "service-worker.js": "/RandomQuoteMachine/service-worker.js",
-  "static/css/main.72b65771.chunk.css.map": "/RandomQuoteMachine/static/css/main.72b65771.chunk.css.map"
+  "main.css": "/FreeCodeCampStuff/static/css/main.72b65771.chunk.css",
+  "main.js": "/FreeCodeCampStuff/static/js/main.761efbb2.chunk.js",
+  "main.js.map": "/FreeCodeCampStuff/static/js/main.761efbb2.chunk.js.map",
+  "runtime~main.js": "/FreeCodeCampStuff/static/js/runtime~main.ce638520.js",
+  "runtime~main.js.map": "/FreeCodeCampStuff/static/js/runtime~main.ce638520.js.map",
+  "static/js/2.69d903a1.chunk.js": "/FreeCodeCampStuff/static/js/2.69d903a1.chunk.js",
+  "static/js/2.69d903a1.chunk.js.map": "/FreeCodeCampStuff/static/js/2.69d903a1.chunk.js.map",
+  "index.html": "/FreeCodeCampStuff/index.html",
+  "precache-manifest.4470a8b0bc5d8f0c94e1d6de041f6202.js": "/FreeCodeCampStuff/precache-manifest.4470a8b0bc5d8f0c94e1d6de041f6202.js",
+  "service-worker.js": "/FreeCodeCampStuff/service-worker.js",
+  "static/css/main.72b65771.chunk.css.map": "/FreeCodeCampStuff/static/css/main.72b65771.chunk.css.map"
 }
